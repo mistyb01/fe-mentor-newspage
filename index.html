@@ -1,60 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | News homepage</title>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="Logo" />
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="front-page-article">
+        <h1>The Bright Future of Web 3.0?</h1>
+        <span
+          >We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </span>
+        <button>Read more</button>
+      </section>
 
-  The Bright Future of Web 3.0?
+      <section class="new-articles">
+        <h2>New</h2>
+        <article>
+          <h5>Hydrogen VS Electric Cars</h5>
+          <span class="article-description">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </span>
+        </article>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+        <article>
+          <h5>The Downsides of AI Artistry</h5>
+          <span class="article-description"> </span>
+          What are the possible adverse effects of on-demand AI image
+          generation?
+        </article>
 
-  Read more
+        <article>
+          <h5>Is VC Funding Drying Up?</h5>
+          <span class="article-description">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </span>
+        </article>
+      </section>
 
-  New 
+      <section class="top-articles">
+        <article>
+          <span class="ranking">01</span>
+          <h5>Reviving Retro PCs</h5>
+          <span class="article-description">
+            What happens when old PCs are given modern upgrades?</span
+          >
+        </article>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+        <article>
+          <span class="ranking">02</span>
+          <h5>Top 10 Laptops of 2022</h5>
+          <span class="article-description">
+            Our best picks for various needs and budgets.
+          </span>
+        </article>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+        <article>
+          <span class="ranking">03</span>
+          <h5>The Growth of Gaming</h5>
+          <span class="article-description">
+            How the pandemic has sparked fresh opportunities.
+          </span>
+        </article>
+      </section>
+    </main>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>
