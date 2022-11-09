@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +7,97 @@
 
 body {
   background-color: hsl(36deg, 100%, 96%);
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(236deg, 13%, 42%);
+  line-height: 1.75;
+}
+
+main {
+  display: grid;
+  grid-row-gap: 3rem;
+  padding: 0rem 1rem;
+}
+
+nav {
+  display: none;
+}
+
+.header-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+}
+
+#logo-img {
+  justify-self: start;
+}
+
+#menu-icon {
+  justify-self: end;
+}
+
+.front-page-article {
+  display: grid;
+  grid-row-gap: 1rem;
+}
+.front-page-article img {
+  max-width: 100%;
+  height: auto;
+}
+.front-page-article button {
+  background-color: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 96%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  border-style: none;
+  padding: 0.75rem 1.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5ch;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+h1 {
+  color: hsl(240deg, 100%, 5%);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.new-articles {
+  display: grid;
+  row-gap: 1.5rem;
+  padding: 1rem;
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 96%);
+}
+.new-articles p {
+  color: rgba(197, 198, 206, 0.7);
+}
+.new-articles h2 {
+  color: hsl(35deg, 77%, 62%);
+}
+.new-articles h5 {
+  margin-bottom: 0.5rem;
+}
+.new-articles hr {
+  border: 0.5px solid hsl(236deg, 13%, 42%);
+}
+
+.top-articles {
+  display: grid;
+  grid-row-gap: 1rem;
+}
+.top-articles article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }/*# sourceMappingURL=style.css.map */
