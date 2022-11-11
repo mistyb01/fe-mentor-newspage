@@ -22,6 +22,11 @@ main {
   grid-row-gap: 3rem;
   padding: 0rem 1rem;
 }
+@media (min-width: 1024px) {
+  main {
+    background-color: pink;
+  }
+}
 
 nav {
   display: none;

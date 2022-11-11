@@ -1,6 +1,18 @@
 @use './abstracts/colors';
+@use 'sass:map';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
+$breakpoints: (
+    medium: 768px,
+    large: 1024px
+);
+
+@mixin mq($key) {
+    $size: map.get($breakpoints, $key);
+    @media (min-width: $size) {
+        @content;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +34,10 @@ main {
     display: grid;
     grid-row-gap: 3rem;
     padding: 0rem 1rem;
+
+    @include mq(large) {
+        background-color: pink;
+    }
 }
 
 nav {
@@ -120,7 +136,5 @@ h1 {
         display: grid;
         row-gap: 0.25rem;
     }
-
-
 }
 
