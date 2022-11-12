@@ -47,7 +47,8 @@ main {
     @include mq(large) {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto 1fr;
-        gap: 1.5rem;
+        column-gap: 1.5rem;
+        row-gap: 3rem;
     }
 }
 
@@ -158,6 +159,7 @@ h1 {
         object-fit: cover;
         max-width: 100%; /* max-width and width are necessary for image in the grid to scale!!! */
         width: 100%;
+        height: 100%;
     }
     h5 {
         font-weight: 800;
@@ -171,6 +173,16 @@ h1 {
     .ranking-text {
         display: grid;
         row-gap: 0.25rem;
+    }
+
+    @include mq(large) {
+        grid-row: 2;
+        grid-column: span 3;
+        column-gap: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
 }
 
