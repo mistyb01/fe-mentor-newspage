@@ -53,10 +53,21 @@ main {
 }
 
 nav {
+    justify-self: end;
+}
+nav ul {
     display: none;
+    list-style: none;
+    font-size: 0.75rem;
+    
+    @include mq(large) {
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.5rem;
+    }
 }
 
-.header-icons {
+header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -68,6 +79,10 @@ nav {
 }
 #menu-icon {
     justify-self: end;
+
+    @include mq(large) {
+        display: none;
+    }
 }
 
 .front-page-article {
@@ -142,6 +157,7 @@ h1 {
     }
     hr {
         border: 0.5px solid colors.$darkgrayblue;
+        height: 0.5px;
     }
     
 }
@@ -186,3 +202,6 @@ h1 {
     }
 }
 
+footer {
+    margin-top: 2rem;
+}

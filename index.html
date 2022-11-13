@@ -30,13 +30,14 @@
     <header>
       <div class="header-icons">
         <img src="./assets/images/logo.svg" id="logo-img" alt="Logo" />
+      </div>
+      <nav>
         <img
           src="./assets/images/icon-menu.svg"
           id="menu-icon"
           alt="Toggle menu button"
         />
-      </div>
-      <nav>
+
         <ul>
           <li>Home</li>
           <li>New</li>
@@ -48,10 +49,16 @@
     </header>
     <main>
       <section class="front-page-article">
-        <img
-          src="assets/images/image-web-3-desktop.jpg"
-          alt="3D artwork of buttons"
-        />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets/images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt="3D artwork of buttons"
+          />
+        </picture>
         <div class="description-and-title">
           <h1>The Bright Future of Web 3.0?</h1>
           <div class="front-page-article-description">

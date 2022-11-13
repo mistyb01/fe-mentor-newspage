@@ -44,10 +44,24 @@ main {
 }
 
 nav {
-  display: none;
+  justify-self: end;
 }
 
-.header-icons {
+nav ul {
+  display: none;
+  list-style: none;
+  font-size: 0.75rem;
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+}
+
+header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -60,6 +74,11 @@ nav {
 
 #menu-icon {
   justify-self: end;
+}
+@media (min-width: 1024px) {
+  #menu-icon {
+    display: none;
+  }
 }
 
 .front-page-article {
@@ -142,6 +161,7 @@ h1 {
 }
 .new-articles hr {
   border: 0.5px solid hsl(236deg, 13%, 42%);
+  height: 0.5px;
 }
 
 .top-articles {
@@ -184,4 +204,8 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+footer {
+  margin-top: 2rem;
 }/*# sourceMappingURL=style.css.map */
