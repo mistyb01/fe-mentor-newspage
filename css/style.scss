@@ -23,6 +23,7 @@ body {
     background-color: colors.$offwhite;
     width: 100%;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 
     @include mq(large) {
         width: 80%;
@@ -67,25 +68,25 @@ nav {
 }
 
 .nav-menu {
-    display: none;
-
+    position: absolute;
+    right: -500px; /* by default, menu is off-screen */
+    top: 0px;
     @include mq(large) {
-        display: block;
+        position: relative;
+        right: 0px;
     }
 }
 
 .visible-menu {
-    display:block;
     background-color: #fff;
     width: 70%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
+    right: 0px; /* the right value is brought to 0 which brings it to view! */
+    transition: right 0.5s;
     padding-left: 1rem;
-    padding-top: 3rem;
+    padding-top: 6rem;
     z-index: 3;
-
+    
     @include mq(large) {
         display: none;
     }
@@ -95,12 +96,13 @@ nav {
 
 nav ul {
     list-style: none;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 1.25rem;
     
     @include mq(large) {
+        font-size: 0.75rem;
         flex-direction: row;
         column-gap: 1.5rem;
     }
