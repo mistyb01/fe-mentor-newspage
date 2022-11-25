@@ -71,6 +71,7 @@ nav {
     position: absolute;
     right: -500px; /* by default, menu is off-screen */
     top: 0px;
+    
     @include mq(large) {
         position: relative;
         right: 0px;
@@ -96,7 +97,7 @@ nav {
 
 nav ul {
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     row-gap: 1.25rem;
