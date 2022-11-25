@@ -58,6 +58,20 @@ nav {
 
 .visible-menu {
   display: block;
+  background-color: #fff;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  z-index: 2;
+}
+@media (min-width: 1024px) {
+  .visible-menu {
+    display: none;
+  }
 }
 
 nav ul {
@@ -65,6 +79,7 @@ nav ul {
   font-size: 0.75rem;
   display: flex;
   flex-direction: column;
+  row-gap: 1rem;
 }
 @media (min-width: 1024px) {
   nav ul {
@@ -87,6 +102,8 @@ header {
 
 #menu-icon {
   justify-self: end;
+  position: relative;
+  z-index: 5;
 }
 @media (min-width: 1024px) {
   #menu-icon {

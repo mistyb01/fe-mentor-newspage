@@ -66,13 +66,29 @@ nav {
 
 .visible-menu {
     display:block;
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    z-index: 2;
+
+    @include mq(large) {
+        display: none;
+    }
+
 }
+
 
 nav ul {
     list-style: none;
     font-size: 0.75rem;
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
     
     @include mq(large) {
         flex-direction: row;
@@ -92,6 +108,8 @@ header {
 }
 #menu-icon {
     justify-self: end;
+    position: relative;
+    z-index: 5;
 
     @include mq(large) {
         display: none;
