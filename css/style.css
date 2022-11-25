@@ -47,14 +47,27 @@ nav {
   justify-self: end;
 }
 
-nav ul {
+.nav-menu {
   display: none;
+}
+@media (min-width: 1024px) {
+  .nav-menu {
+    display: block;
+  }
+}
+
+.visible-menu {
+  display: block;
+}
+
+nav ul {
   list-style: none;
   font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 1024px) {
   nav ul {
-    display: flex;
     flex-direction: row;
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;

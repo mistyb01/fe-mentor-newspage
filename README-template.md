@@ -102,10 +102,17 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
   https://www.freecodecamp.org/news/how-to-use-sass-with-css/#:~:text=How%20to%20Use%20Sass%20in%20a%20Project
+
   https://gridbyexample.com/examples/example21/
-  https://stackoverflow.com/questions/46090760/controlling-the-size-of-an-image-within-a-css-grid-layout
+
+  https://stackoverflow.com/questions/46090760/
+  controlling-the-size-of-an-image-within-a-css-grid-layout
+
   https://www.youtube.com/watch?v=g1kF45K-q7o&t=213s
+
   https://stackoverflow.com/questions/30460681/changing-image-src-depending-on-screen-size
+
+  https://www.a11ymatters.com/pattern/mobile-nav/
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

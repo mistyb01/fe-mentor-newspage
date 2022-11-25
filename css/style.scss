@@ -55,13 +55,26 @@ main {
 nav {
     justify-self: end;
 }
-nav ul {
+
+.nav-menu {
     display: none;
+
+    @include mq(large) {
+        display: block;
+    }
+}
+
+.visible-menu {
+    display:block;
+}
+
+nav ul {
     list-style: none;
     font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
     
     @include mq(large) {
-        display: flex;
         flex-direction: row;
         column-gap: 1.5rem;
     }
