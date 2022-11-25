@@ -84,7 +84,7 @@ nav {
     right: 0px; /* the right value is brought to 0 which brings it to view! */
     transition: right 0.5s;
     padding-left: 1rem;
-    padding-top: 6rem;
+    padding-top: 50%;
     z-index: 3;
     
     @include mq(large) {
