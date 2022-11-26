@@ -98,21 +98,18 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [How to use SASS with CSS - freeCodeCamp](https://www.freecodecamp.org/news/how-to-use-sass-with-css/#:~:text=How%20to%20Use%20Sass%20in%20a%20Project)
 
-  https://www.freecodecamp.org/news/how-to-use-sass-with-css/#:~:text=How%20to%20Use%20Sass%20in%20a%20Project
+- [SASS Tutorial - Kevin Powell](https://www.youtube.com/watch?v=g1kF45K-q7o&t=213s)
 
-  https://gridbyexample.com/examples/example21/
+- [Nested Grid - Grid By Example](https://gridbyexample.com/examples/example21/)
 
-  https://stackoverflow.com/questions/46090760/
-  controlling-the-size-of-an-image-within-a-css-grid-layout
+- [Images in CSS Grid - Stackoverflow](https://stackoverflow.com/questions/46090760/
+  controlling-the-size-of-an-image-within-a-css-grid-layout)
 
-  https://www.youtube.com/watch?v=g1kF45K-q7o&t=213s
+- [Changing img src based on screen size - Stackoverflow](https://stackoverflow.com/questions/30460681/changing-image-src-depending-on-screen-size)
 
-  https://stackoverflow.com/questions/30460681/changing-image-src-depending-on-screen-size
-
-  https://www.a11ymatters.com/pattern/mobile-nav/
+- [Accessible mobile nav - A11Y](https://www.a11ymatters.com/pattern/mobile-nav/)
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

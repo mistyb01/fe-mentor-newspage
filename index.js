@@ -13,6 +13,7 @@ toggleIcon.onclick = function() {
     }
 }
 
+// remove menu navigation styles if window is large
 window.onresize = function() {
     const mediaQueryLarge = window.matchMedia('(min-width: 768px)');
     if (mediaQueryLarge.matches) {
